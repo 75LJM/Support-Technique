@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Support technique</title>
+	<!-- CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+	<!-- JS -->
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+	<script src="https://kit.fontawesome.com/4d7f4b5fb1.js" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="assets/js/script.js"></script>
+</head>
+<body>
+	<header>
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow">
+		  <div class="container">
+		  	<a class="navbar-brand" href="#">Support technique</a>
+			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			    <span class="navbar-toggler-icon"></span>
+			  </button>
+
+			  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+			    <ul class="navbar-nav ml-auto">
+			      <li class="nav-item">
+			        <a class="nav-link" href="index.html">Accueil</a>
+			      </li>
+			      <li class="nav-item">
+			        <a class="nav-link" href="admin.html">Admin</a>
+			      </li>
+			    <!--   <li class="nav-item dropdown">
+			        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			          Dropdown
+			        </a>
+			        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+			          <a class="dropdown-item" href="#">Action</a>
+			          <a class="dropdown-item" href="#">Another action</a>
+			          <div class="dropdown-divider"></div>
+			          <a class="dropdown-item" href="#">Something else here</a>
+			        </div>
+			      </li> -->
+			    </ul>
+			  </div>
+		  </div>
+		</nav>
+	</header>
+	<main>
+		<section class="container py-5">
+			<h1 class="display-4 text-center">Support technique</h1>
+			<form id="supportForm">
+				<div class="form-row">
+					<div class="form-group col-12 col-md-6">
+						<label for="firstnameInput">Prénom</label>
+						<input type="text" name="firstname" id="firstnameInput" class="form-control" placeholder="Ex: John">
+					</div>
+					<div class="form-group col-12 col-md-6">
+						<label for="lastnameInput">NOM</label>
+						<input type="text" name="lastname" placeholder="Ex: DOE" id="lastnameInput" class="form-control">
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="emailInput">Adresse email</label>
+					<input type="email" name="email" id="emailInput" placeholder="example@example.com" class="form-control"> 
+				</div>
+				<div class="form-group">
+					<label for="telInput">Téléphone</label>
+					<input type="tel" name="tel" id="telInput" placeholder="Ex: 06 01 02 03 04" class="form-control"> 
+				</div>
+				<div class="form-row">
+					<div class="form-group col-12 col-md-6">
+						<label for="dateInput">Date</label>
+						<input type="date" name="date" id="dateInput" class="form-control">
+					</div>
+					<div class="form-group col-12 col-md-6">
+						<label for="timeInput">Heure</label>
+						<input type="time" name="time" id="timeInput" class="form-control">
+					</div>
+				</div>
+				<div class="input-group mb-3">
+				  <div class="input-group-prepend">
+				    <label class="input-group-text" for="inputGroupSelect01">Objet</label>
+				  </div>
+				  <select class="custom-select" name="object" id="inputGroupSelect01">
+				    <option selected disabled>Choisir l'objet du ticket</option>
+				    <option value="Panne matérielle">Panne matérielle</option>
+				    <option value="Panne logicielle">Panne logicielle</option>
+				    <option value="Virus">Virus</option>
+				    <option value="Perte de connexion internet">Perte de connexion internet</option>
+				  </select>
+				</div>
+				<div class="form-group">
+					<label id="messageInput">Message</label>
+					<textarea class="form-control w-100" id="messageInput" name="message" placeholder="Ecrivez votre message ici" rows="6"></textarea>
+				</div>
+				<button type="submit" class="btn btn-success">Envoyer</button>
+			</form>
+		</section>
+	</main>
+</body>
+</html>
